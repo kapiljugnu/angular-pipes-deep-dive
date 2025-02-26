@@ -8,7 +8,7 @@ export class TemperaturePipe implements PipeTransform {
   transform(
     value: string | number | null,
     inputType: 'cel' | 'fah',
-    outputType: 'cel' | 'fah'
+    outputType?: 'cel' | 'fah'
   ) {
     if(!value) {
         return value;
